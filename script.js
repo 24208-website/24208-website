@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Get form inputs
       const timeInput = form.elements.time;
       const moistureInput = form.elements.moisture;
-      const temperatureInput = form.elements.temperature;
+      float temperatureInput = form.elements.temperature;
       const humidityInput = form.elements.humidity;
   
       // Create a new table row
