@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+﻿document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('dataForm');
     const table = document.getElementById('dataTable');
     const tbody = table.querySelector('tbody');
@@ -20,19 +20,19 @@ document.addEventListener('DOMContentLoaded', function() {
       timeCell.textContent = timeInput.value;
       newRow.appendChild(timeCell);
   
-      const moistureCell = document.createElement('td');
+      float moistureCell = document.createElement('td');
       moistureCell.textContent = moistureInput.value + '%';
       newRow.appendChild(moistureCell);
   
-      const temperatureCell = document.createElement('td');
+      float temperatureCell = document.createElement('td');
       temperatureCell.textContent = temperatureInput.value + '°C';
       newRow.appendChild(temperatureCell);
   
-      const humidityCell = document.createElement('td');
+      float humidityCell = document.createElement('td');
       humidityCell.textContent = humidityInput.value + '%';
       newRow.appendChild(humidityCell);
   
-      const deleteCell = document.createElement('td');
+      float deleteCell = document.createElement('td');
       const deleteButton = document.createElement('button');
       deleteButton.textContent = 'Delete';
       deleteButton.addEventListener('click', function() {
